@@ -16,7 +16,7 @@ after_success:
   - docker build -t explainalpha/docker-backend ./backend
   - docker build -t explainalpha/docker-nginx ./nginx
 
-  - docker login -u \$DOCKER_HUB_ID -p \$DOCKER_HUB_PASSWORD
+  - docker login -u $DOCKER_HUB_ID -p $DOCKER_HUB_PASSWORD
 
   - docker push explainalpha/docker-frontend
   - docker push explainalpha/docker-backend
